@@ -13,7 +13,7 @@ module.exports= (app) => {
   app.get('/api/logout', (req, res) => {
     req.logout();
     res.send(req.user);
-   
+    console.log('logged out');
   });
 
  app.get('/api/user',(req,res) => {
